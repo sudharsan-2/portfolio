@@ -1,0 +1,124 @@
+.education-container {
+  min-height: 100vh;
+  padding: 120px 90px;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.80),
+      rgba(255, 255, 255, 0.80)
+    ),
+    url("../assets/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section title */
+.education-container h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 60px;
+  color: #111;
+  position: relative;
+}
+
+/* Underline */
+.education-container h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #111;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Timeline container */
+.education-list {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+}
+
+/* Vertical line */
+.education-list::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #ddd;
+}
+
+/* Card */
+.education-item {
+  background: #ffffff;
+  padding: 26px 30px 26px 45px;
+  border-radius: 14px;
+  position: relative;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Timeline dot */
+.education-item::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  background: #111;
+  border-radius: 50%;
+}
+
+/* Hover */
+.education-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* Text styles */
+.education-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.college {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.year {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.score {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .education-container {
+    padding: 100px 24px;
+  }
+
+  .education-list::before {
+    left: 6px;
+  }
+
+  .education-item {
+    padding-left: 36px;
+  }
+}

@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#home {
+  padding-top: 70px;
+}
+
+section {
+  min-height: 100vh;
+}

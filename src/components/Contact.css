@@ -1,0 +1,100 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 120px 90px;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.80),
+      rgba(255, 255, 255, 0.80)
+    ),
+    url("../assets/background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section title */
+.contact-container h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 60px;
+  color: #111;
+  position: relative;
+}
+
+/* Underline */
+.contact-container h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #111;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Card */
+.contact-card {
+  max-width: 620px;
+  margin: auto;
+  background: #ffffff;
+  padding: 45px 50px;
+  border-radius: 16px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact rows */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Icons */
+.contact-item .icon {
+  font-size: 1.25rem;
+  color: #111;
+}
+
+/* Links */
+.contact-item a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Resume button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #111;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    padding: 100px 24px;
+  }
+
+  .contact-card {
+    padding: 35px 26px;
+  }
+}

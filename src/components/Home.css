@@ -1,0 +1,61 @@
+.hero {
+  height: 100vh;
+  background-image: url("../assets/thirukkural-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Soft dark overlay to blend text into image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Content directly on image (no box) */
+.hero-overlay {
+  position: relative;
+  max-width: 800px;
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+/* Name – subtle */
+.name {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+/* Role – lighter */
+.role {
+  font-size: 1.7rem;
+  color: #02f8f4;
+  margin-bottom: 40px;
+}
+
+/* Quote – MAIN FOCUS */
+.quote {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.9;
+  color: #ffffff;
+}
+
+/* Author – clean & bold */
+.author {
+  display: block;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f1f1f1;
+  letter-spacing: 0.5px;
+}
