@@ -40,11 +40,11 @@ const Contact = () => {
         <div className="contact-item">
           <FaGithub className="icon" />
           <a
-            href="https://github.com/sudharsan-27"
+            href="https://github.com/sudharsan-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            github.com/sudharsan-2?tab=repositories
+            github
           </a>
 
         </div>
